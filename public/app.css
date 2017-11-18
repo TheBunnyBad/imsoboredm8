@@ -1,0 +1,31 @@
+.chat{
+  color: white;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.MyColor{
+  color: blue;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.EnemyColor{
+  color: red;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 2em;
+}
+.sketch{
+}
+
+body{
+  background-color: lightblue;
+  text-align: center;
+}
+
+nav li{
+  display: inline-block;
+}

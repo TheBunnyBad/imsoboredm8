@@ -2,9 +2,22 @@ doctype
 html(lang='en')
   head
     script(src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js")
-    script(src="./public/js/paint.js")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js")
+    script(src="./public/js/connect4.js")
+    script(src="./public/js/chat.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js")    
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous")
+    link(rel="stylesheet" href="/public/app.css" type="text/css" media="all")
     meta(charset='utf-8')
     title Holi
   body
-    h1 Pa k kieres saber eso jaja salu2
+    nav
+      li
+        div(class="sketch" id="sketch-holder")
+      li
+        div(name="Messages")
+          label(id="user")
+            ul(id="messages") 
+        div(name="input")
+          label(type="text") Say something cute
+          input(type="text" id="chat-input")
+          button(id="chat-submit") Say!
